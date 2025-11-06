@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebLife</title>
+
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="../style.css" rel="stylesheet" type="text/css">
+
+    <style>
+        /* --- Estilos personalizados --- */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Hace que la imagen llene el espacio sin deformarse */
+            border-radius: 10px;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="../index.html"><img src="../img/logo.png" alt="logo"
+                    class="logo">WebLife</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../doctores.html">Doctores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../clinicas.html">Clínicas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- Imagen a la izquierda -->
+            <div class="col-md-6 p-0">
+                <img src="../img/doctor1.jpg" alt="Doctor Carlos Pérez" class="hero-image">
+            </div>
+
+            <!-- Texto a la derecha -->
+            <div class="col-md-6 hero-text">
+                <h2 class="fw-bold mb-3">Doctor Carlos Pérez</h2>
+                <p>
+                    El Dr. Carlos Pérez es un destacado dermatólogo con más de 15 años de experiencia en el
+                    diagnóstico, tratamiento y prevención de enfermedades de la piel, cabello y uñas. Se graduó con
+                    honores de la Universidad de El Salvador y posteriormente completó su especialización en
+                    Dermatología Clínica y Estética en el Hospital Nacional Rosales, consolidando su trayectoria con
+                    estudios de actualización en instituciones internacionales de referencia en dermatología avanzada y
+                    estética médica.
+
+                    Durante su carrera, el Dr. Márquez ha combinado su pasión por la ciencia con un profundo compromiso
+                    hacia la salud y bienestar de sus pacientes. Su enfoque se basa en una atención personalizada, donde
+                    la confianza, la ética y la empatía son pilares fundamentales. Atiende tanto a adultos como a niños,
+                    abordando desde afecciones comunes como el acné, dermatitis y psoriasis, hasta tratamientos
+                    estéticos de alta precisión como rejuvenecimiento facial, control de manchas, eliminación de
+                    cicatrices y procedimientos con láser.
+                </p>
+                <p>
+                    <strong>Su misión</strong> es ayudar a cada paciente a lucir y sentirse bien con su piel, combinando
+                    ciencia,
+                    tecnología y un trato humano excepcional. En su consulta, los pacientes encuentran no solo
+                    soluciones efectivas, sino también un espacio de confianza y orientación continua para mantener una
+                    piel sana y radiante.
+                </p>
+
+                <div class="mt-4">
+                    <a href="https://wa.me/50312345678" target="_blank" class="text-success fs-3 me-3">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dermavida" target="_blank" class="text-danger fs-3 me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/dermavida" target="_blank" class="text-primary fs-3 me-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="mailto:contacto@dermavida.com" class="text-dark fs-3">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <!-- Información del doctor -->
+            <div class="col-md-6">
+                <h3 class="fw-bold">Dr. Carlos Pérez</h3>
+                <ul class="list-unstyled">
+                    <li><strong>Especialidad:</strong> Dermatología</li>
+                    <li><strong>Ubicación:</strong> Avenida Central #123, Santa Ana</li>
+                    <li><strong>Teléfono:</strong> +503 4444-5555</li>
+                    <li><strong>Correo:</strong> dr.carlosperez@dermavida.com</li>
+                </ul>
+
+                <p>
+                    El <strong>Dr. Carlos Pérez</strong> es un destacado especialista en dermatología con más de
+                    <strong>15 años de experiencia</strong> en el diagnóstico, tratamiento y prevención de enfermedades
+                    de la piel,
+                    cabello y uñas. Se graduó como médico cirujano en la <em>Universidad de El Salvador</em> y obtuvo su
+                    especialización en <strong>Dermatología</strong> en el <em>Hospital Nacional Rosales</em>.
+                </p>
+
+                <p>
+                    A lo largo de su trayectoria, el Dr. Pérez ha desarrollado una amplia experiencia en el manejo de
+                    afecciones
+                    dermatológicas complejas, incluyendo acné severo, dermatitis, psoriasis, cáncer de piel y
+                    procedimientos
+                    estéticos avanzados. Es reconocido por su atención meticulosa, ética profesional y su compromiso con
+                    la salud y bienestar de cada paciente.
+                </p>
+
+                <p>
+                    Actualmente forma parte del equipo médico de la <strong>Clínica DermaVida</strong>, donde lidera el
+                    área de
+                    tratamientos dermatológicos integrales y participa en programas de educación sobre el cuidado de la
+                    piel.
+                    Su enfoque combina tecnología moderna con un trato humano, garantizando resultados efectivos y
+                    seguros.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="fw-bold">Logro Destacado</h3>
+
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../img/docor1.1.png" class="img-fluid rounded-start" alt="Dr. Carlos Pérez">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo en Dermatología</h5>
+                                <p class="card-text">Conseguido en la universidad de El Salvador a los 25 años.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<hr> <!-- FOOTER -->
+
+<footer class="text-white m-0 p-0 w-100" style="background-color: rgb(1, 128, 28);">
+    <div class="container-fluid text-center text-md-start py-4">
+        <div class="row g-0 px-4">
+            <!-- Columna 1 -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">WebLife</h5>
+                <p>
+                    Encuentra doctores y clínicas privadas de confianza.
+                    Cuidamos de tu salud conectándote con los mejores especialistas.
+                </p>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="col-md-4 mb-3">
+                <h6 class="fw-bold">Enlaces útiles</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+                    <li><a href="#especialidades" class="text-white text-decoration-none">Especialidades</a></li>
+                    <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3 -->
+            <div class="col-md-4 mb-3">
+                <h6 class="fw-bold">Contáctanos</h6>
+                <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Santa Ana, El Salvador</p>
+                <p class="mb-1"><i class="bi bi-envelope-fill"></i> info@directoriomedico.com</p>
+                <p class="mb-3"><i class="bi bi-telephone-fill"></i> +503 2222-3333</p>
+
+                <!-- Redes sociales -->
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center border-top border-light py-3" style="font-size: 0.9rem;">
+        © 2025 WebLife DM — Todos los derechos reservados.
+    </div>
+</footer>
+
+
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebLife</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html"><img src="img/logo.png" alt="logo" class="logo">WebLife-Doctores</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="doctores.html">Doctores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="clinicas.html">Clínicas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
+    </div>
+
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/doctor1.1.jpg" class="d-block w-100" alt="Imagen 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Dr. Carlos Pérez</h5>
+          <p>Dermatología</p>
+        </div>
+      </div>
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="search-bar">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-1">
+          <img src="img/search-icon-png-4.png" alt="">
+        </div>
+        <div class="col-md-8">
+          <input type="text" id="searchInput" class="form-control" placeholder="Buscar por nombre o especialidad...">
+        </div>
+        <div class="col-md-3">
+          <div class="opciones">
+            <select id="especialidadFilter" class="form-select">
+              <option value="">Todas las especialidades</option>
+              <option value="pediatria">Pediatría</option>
+              <option value="dermatologia">Dermatología</option>
+              <option value="ginecologia">Ginecología</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 1 -->
+    <div id="cardsContainer" class="row g-4">
+      <div class="col-md-4">
+        <div class="card" data-tipo="doctor" data-especialidad="pediatria" data-bs-toggle="modal"
+          data-bs-target="#modal1">
+          <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464" class="card-img-top"
+            alt="Doctor Pediatra">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dr. Juan López</h5>
+            <p class="card-text">Pediatría</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Dr. Juan López - Pediatría</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464" class="card-img-top"
+                alt="Doctor Pediatra">
+              <p><strong>Ubicación:</strong> Calle Principal #45, San Salvador</p>
+              <p><strong>Teléfono:</strong> +503 2222-1111</p>
+              <p><strong>Correo:</strong> drjuanlopez@correo.com</p>
+              <p>Especialista en cardiología preventiva y rehabilitación cardiovascular.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="col-md-4">
+        <div class="card" data-tipo="doctor" data-especialidad="ginecologia" data-bs-toggle="modal"
+          data-bs-target="#modal2">
+          <img src="https://images.unsplash.com/photo-1584515933487-779824d29309" class="card-img-top"
+            alt="Doctora Ginecóloga">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dra. María Ramírez</h5>
+            <p class="card-text">Ginecología</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Dra. María Ramírez - Ginecología</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.unsplash.com/photo-1584515933487-779824d29309" class="card-img-top"
+                alt="Doctora Ginecóloga">
+              <p><strong>Ubicación:</strong> Calle Poniente #10, Santa Ana</p>
+              <p><strong>Teléfono:</strong> +503 3333-22222</p>
+              <p><strong>Correo:</strong> drmaríaramirez@correo.com</p>
+              <p>Especialista en ginecología y salud reproductiva.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="col-md-4">
+        <a href="Docs/CarlosP.html">
+          <div class="card premium" data-tipo="doctor" data-especialidad="dermatologia">
+            <div class="premium-badge"><i class="bi bi-star-fill"></i></div>
+            <img src="img/doctor1.jpg" class="card-img-top" alt="Doctor Dermatólogo">
+            <div class="card-body text-center">
+              <h5 class="card-title">Dr. Carlos Pérez</h5>
+              <p class="card-text">Dermatología</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <p id="noResults" class="no-results d-none">No se encontraron resultados.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripdoc.js"></script>
+
+</body>
+
+<hr>
+
+<footer class="text-white m-0 p-0 w-100" style="background-color: rgb(1, 128, 28);">
+  <div class="container-fluid text-center text-md-start py-4">
+    <div class="row g-0 px-4">
+      <!-- Columna 1 -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">WebLife</h5>
+        <p>
+          Encuentra doctores y clínicas privadas de confianza.
+          Cuidamos de tu salud conectándote con los mejores especialistas.
+        </p>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="col-md-4 mb-3">
+        <h6 class="fw-bold">Enlaces útiles</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+          <li><a href="#especialidades" class="text-white text-decoration-none">Especialidades</a></li>
+          <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="col-md-4 mb-3">
+        <h6 class="fw-bold">Contáctanos</h6>
+        <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Santa Ana, El Salvador</p>
+        <p class="mb-1"><i class="bi bi-envelope-fill"></i> info@directoriomedico.com</p>
+        <p class="mb-3"><i class="bi bi-telephone-fill"></i> +503 2222-3333</p>
+
+        <!-- Redes sociales -->
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center border-top border-light py-3" style="font-size: 0.9rem;">
+    © 2025 WebLife DM — Todos los derechos reservados.
+  </div>
+</footer>
+
+</html>
